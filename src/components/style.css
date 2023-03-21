@@ -1,0 +1,39 @@
+body {
+    background-color: #121214;
+    padding: 0.25rem;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: justify;
+    color: aliceblue;
+}
+
+.home {
+    text-align: center;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+}
+
+.imagem {
+    width: 400px;
+    margin: auto;
+    border-radius: 40%;
+}
+
+hr {
+    height: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff0000, #ffaa2b, #56ff00, #00ffff, #004eff, #4b00ff, #fb00ff, #ff0000, #ffaa2b, #56ff00, #00ffff, #004eff, #4b00ff, #fb00ff, #ff0000, #ffaa2b, #56ff00, #00ffff, #004eff, #4b00ff, #fb00ff, #ff0000, #ffaa2b, #56ff00, #00ffff, #004eff, #4b00ff, #fb00ff, #ff0000, #ffaa2b, #56ff00, #00ffff, #004eff, #4b00ff, #fb00ff, #ff0000);
+    background-size: 1500% auto;
+    animation: glowing 30s linear infinite;
+  }
+  
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
