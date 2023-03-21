@@ -7,7 +7,7 @@ body {
     color: aliceblue;
 }
 
-.home {
+#home {
     text-align: center;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
@@ -16,6 +16,10 @@ body {
     width: 400px;
     margin: auto;
     border-radius: 40%;
+}
+
+.lista2 {
+  color: #121214; // Lista escondida (por enquanto)
 }
 
 hr {
