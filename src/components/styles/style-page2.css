@@ -1,0 +1,43 @@
+body {
+    background-color: #121214;
+    padding: 0.25rem;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: justify;
+    color: aliceblue;
+}
+
+.div1 {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 4px black dotted;
+}
+
+.div2 {
+    background-color: coral;
+}
+
+span {
+    background-color: orange;
+    border: 2px black solid;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+h2 {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+    padding: 0.25rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: gray;
+    border-radius: 10%;
+    height: 425px;
+}
