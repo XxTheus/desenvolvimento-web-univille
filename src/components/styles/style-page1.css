@@ -1,0 +1,12 @@
+body {
+    background-color: #121214;
+    padding: 0.25rem;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: justify;
+    color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+  }
