@@ -41,3 +41,24 @@ section {
     border-radius: 10%;
     height: 425px;
 }
+
+.div3 {
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 90px;
+    padding-left: 40px;
+    border-top: 30px black solid;
+    border-right: 10px blueviolet dotted;
+    border-bottom: 30px red dashed;
+    border-left: 20px fuchsia groove;
+    margin: center;
+}
+
+.p2 {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
