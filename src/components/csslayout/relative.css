@@ -1,0 +1,23 @@
+div {
+    width: 170px;
+    height: 40px;
+    border: 1px black solid;
+}
+
+div.um {
+    position: relative;
+    background-color: violet;
+    left: 120px;
+}
+
+div.dois {
+    background-color: aquamarine;
+    position: relative;
+    left: 60px;
+    margin: 2px;
+}
+
+div.tres {
+    position: relative;
+    background-color: greenyellow;
+}
