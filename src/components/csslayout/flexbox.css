@@ -1,0 +1,11 @@
+.container > div {
+    border: 1px solid;
+}
+
+.container{
+    display: flex;
+    /* justify-content: center; */ /* Centro */
+    /* justify-content: space-between; */ /*  */
+    /* justify-content: space-around; */ /* Mesmo espaço para cada div */
+    justify-content: space-evenly;
+}
