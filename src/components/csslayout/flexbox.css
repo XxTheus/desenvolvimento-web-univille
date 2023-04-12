@@ -4,8 +4,12 @@
 
 .container{
     display: flex;
+    align-items: center;
     /* justify-content: center; */ /* Centro */
     /* justify-content: space-between; */ /*  */
     /* justify-content: space-around; */ /* Mesmo espaço para cada div */
     justify-content: space-evenly;
+    background-color: aqua;
+    width: 100%;
+    height: 200px;
 }
