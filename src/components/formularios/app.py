@@ -6,7 +6,12 @@ app = Flask(__name__)
 def index():
     # dados = request.args
     usuario = request.form.get('usuario')
-    return f"<h1>{usuario}</h1>"
+    senha = request.form.get('senha')
+    dataNascimento = request.form.get('dataNascimento')
+    chocolate = request.form.get('chocolate')
+    coquinha = request.form.get('coquinha')
+    sexo = request.form.get('sexo')
+    return f"<h1>{usuario}</h1><h1>{senha}</h1><h1>{dataNascimento}</h1><h3>Chocolate: {chocolate} Coquinha: {coquinha}</h3><h3>{sexo}</h3>"
 
 """     if dados['nome'] == "Matheus":
         return f"<p>{dados['nome']} Válido</p>"
@@ -29,22 +34,35 @@ def formulario():
         <form action="http://localhost:5000/" method="POST">
             <fieldset>
                 <label for="txtUsuario">Usuário</label>
-                <input type="text"
-                    id="txtUsuario"
-                    name="usuario"
-                    placeholder="Digite seu Usuário">
+                <input type="email" id="txtUsuario" name="usuario" placeholder="Digite seu Usuário">
             </fieldset>
             <fieldset>
-                <label for="txtSenha">Senha</label>
-                <input type="password" 
-                    name="Senha"
-                    id="txtSenha"
-                    placeholder="Digite sua Senha">
+                <label for="txtData">Sua data de Nascimento</label>
+                <input type="date" name="dataNascimento">
+            </fieldset>
+            <fieldset>
+                <label for="txtCheck">Qual você gosta?</label>
+                <input type="checkBox" name="chocolate">Chocolate
+                <input type="checkBox" name="coquinha">Coca-cola
+            </fieldset>
+            <fieldset>
+                <label for="txtSexo">Qual é o seu sexo</label>
+                <input type="radio" name="sexo" value="Masculino">Masculino
+                <input type="radio" name="sexo" value="Feminino">Feminino
+            </fieldset>
+            <fieldset>
+                <label for="txtsenha">Senha</label>
+                <input type="password" id="txtsenha" name="senha" placeholder="Digite sua senha" required>
+            </fieldset>
+            <fieldset>
+                <label for="txtsenha">Seu arquivo</label>
+                <input type="file" name="file">
+            </fieldset>
+            <fieldset>
+                <input type="text" name="textFixo" value="Não da para alterar :)" readonly="readonly" disabled> 
             </fieldset>
             <input type="submit">
-            <!--
-                <button type="submit">Enviar</button>
-            -->
+            <!--<button type="submit">Enviar</button>-->
         </form>
     </body>
 </html>
