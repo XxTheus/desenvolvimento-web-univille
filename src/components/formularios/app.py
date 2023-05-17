@@ -11,7 +11,9 @@ def index():
     chocolate = request.form.get('chocolate')
     coquinha = request.form.get('coquinha')
     sexo = request.form.get('sexo')
-    return f"<h1>{usuario}</h1><h1>{senha}</h1><h1>{dataNascimento}</h1><h3>Chocolate: {chocolate} Coquinha: {coquinha}</h3><h3>{sexo}</h3>"
+    cores = request.form.get('cores')
+    texto = request.form.get('texto')
+    return f"<h1>{usuario}</h1><h1>{senha}</h1><h1>{dataNascimento}</h1><h3>Chocolate: {chocolate} Coquinha: {coquinha}</h3><h3>{sexo}</h3><h3>Cor: {cores}</h3><h3> Você digitou: {texto}</h3"
 
 """     if dados['nome'] == "Matheus":
         return f"<p>{dados['nome']} Válido</p>"
@@ -60,6 +62,18 @@ def formulario():
             </fieldset>
             <fieldset>
                 <input type="text" name="textFixo" value="Não da para alterar :)" readonly="readonly" disabled> 
+            </fieldset>
+            <fieldset>
+                <select name="cores" placeholder="">
+                    <option value="0"></option>
+                    <option value="1">Azul</option>
+                    <option value="2">Verde</option>
+                    <option value="3">Vermelho</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <textarea rows="10" cols="30" name="texto">
+                </textarea>
             </fieldset>
             <input type="submit">
             <!--<button type="submit">Enviar</button>-->
