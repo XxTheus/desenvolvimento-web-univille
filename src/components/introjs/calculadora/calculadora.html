@@ -10,17 +10,31 @@
     <body>
         <main>
             <input id="display" type="text" disabled>
-            <div class="teclado">
-                <button onclick="botaoClicado(9)">9</button>
-                <button onclick="botaoClicado(8)">8</button>
-                <button onclick="botaoClicado(7)">7</button>
-                <button onclick="botaoClicado(6)">6</button>
-                <button onclick="botaoClicado(5)">5</button>
-                <button onclick="botaoClicado(4)">4</button>
-                <button onclick="botaoClicado(3)">3</button>
-                <button onclick="botaoClicado(2)">2</button>
-                <button onclick="botaoClicado(1)">1</button>
-                <button onclick="botaoClicado(0)">0</button>
+            <div class="botoes">
+                <div class="teclado">
+                    <button onclick="botaoClicado(9)">9</button>
+                    <button onclick="botaoClicado(8)">8</button>
+                    <button onclick="botaoClicado(7)">7</button>
+                    <button onclick="botaoClicado(6)">6</button>
+                    <button onclick="botaoClicado(5)">5</button>
+                    <button onclick="botaoClicado(4)">4</button>
+                    <button onclick="botaoClicado(3)">3</button>
+                    <button onclick="botaoClicado(2)">2</button>
+                    <button onclick="botaoClicado(1)">1</button>
+                    <button onclick="botaoClicado('')">( )</button>
+                    <button onclick="botaoClicado(0)">0</button>
+                    <button onclick="botaoClicado('.')">.</button>
+                </div>
+                <div class="operacoes">
+                    <button onclick="limparTudo()">AC</button>
+                    <button onclick="limparUm()">CE</button>
+                    <button onclick="botaoClicado('+')">+</button>
+                    <button onclick="botaoClicado('-')">-</button>
+                    <button onclick="botaoClicado('%')">%</button>
+                    <button onclick="botaoClicado('*')">x</button>
+                    <button onclick="botaoClicado('/')">/</button>
+                    <button onclick="resultado()">=</button>
+                </div>
             </div>
         </main>
         <script src="calculadora.js"></script>

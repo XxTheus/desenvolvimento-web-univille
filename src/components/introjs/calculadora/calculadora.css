@@ -1,9 +1,12 @@
 main {
     display: flex;
     flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 .teclado {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -11,4 +14,14 @@ main {
 #display {
     font-size: large;
     font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+}
+
+.operacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
