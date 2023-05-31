@@ -1,8 +1,13 @@
+body {
+    background-color: #121214;
+}
+
 main {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 40%;
     margin: 0 auto;
+    margin-top: 50%;
 }
 
 .teclado {
