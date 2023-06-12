@@ -1,9 +1,16 @@
-function soma(a, b){
+function soma(a, b, func_callback){
     setTimeout(function (){
-        return a + b
+        func_callback(a + b)
     }, 1000)
-    //return undefined (implicito)
 }
 
-const result = soma(2,2)
+const result = soma(2,2, function(total) {
+    console.log('Total: ' + total)
+    soma(total, 250, function(total){
+        console.log('Total: '+ total)
+        soma(total, 10, function(r){
+            console.log('Total: '+ r)
+        })
+    })
+})
 console.log(result)
